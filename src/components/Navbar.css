@@ -1,0 +1,111 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  z-index: 10; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-links ul li {
+  list-style: none;
+  margin: 5px 0;
+  margin-left: 30px;
+}
+
+.navbar-links ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar-links a:hover{
+  color: orange;
+  font-size: 18px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px 3px 3px 8px;
+}
+
+.search-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+  border-radius:3px 8px 8px 3px;
+}
+
+.search-button:hover {
+  background-color: #004085;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background-color: #007bff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    margin: 10px 0;
+  }
+}

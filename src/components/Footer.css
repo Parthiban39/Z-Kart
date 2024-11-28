@@ -1,0 +1,29 @@
+.footer {
+    top: 15vh;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  .footer .footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer .social-links{
+    margin-top: 10px;
+  }
+  .footer .social-links a{
+    color: rgb(80, 80, 199);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .footer .social-links a:hover{
+    color: blue;
+  }
+  .footer p{
+    font-size: x-large;
+  }
